@@ -1,0 +1,29 @@
+input {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+
+
+  
+
+}
+
+input::placeholder{
+  color: gray;
+
+}
+input:active{
+  background-color: orange;
+
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(90deg,
+      white 0%,
+      gray 25%,
+      blue 100%);
+      margin: 50px;
+}
