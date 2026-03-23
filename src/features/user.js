@@ -13,6 +13,8 @@ const userSlice = createSlice({
             state.value = { name:"",age:0,email:"" };
         }
 
+       
+
     }
 });
 
