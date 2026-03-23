@@ -92,3 +92,173 @@ input::placeholder {
 input:active {
   background-color: orange;
 }
+/* Specific Class Selectors */
+.custom-input {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+  transition: border-color 200ms ease, box-shadow 200ms ease, transform 200ms ease;
+}
+
+.custom-input:focus {
+  outline: none;
+  border-color: #6a8bff;
+  box-shadow: 0 0 0 4px rgba(106, 139, 255, 0.2);
+  transform: scale(1.02);
+}
+
+.custom-input::placeholder {
+  color: gray;
+}
+
+.custom-input:active {
+  background-color: orange;
+}
+
+
+/* Card wrapper used in both components */
+.card-container {
+  width: 100%;
+  max-width: 420px;
+  margin: 30px auto;
+  padding: 24px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  color: #f1f5f9;
+  transition: all 0.25s ease;
+}
+
+.card-container:hover {
+  transform: translateY(-4px);
+}
+
+/* Flex row (input + button) */
+.handle-flex-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+/* Input styling */
+.handle-flex-row input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #020617;
+  color: #e2e8f0;
+  font-size: 14px;
+  box-shadow: inset 0 0 0 1px #334155;
+  transition: 0.2s ease;
+}
+
+.handle-flex-row input:focus {
+  box-shadow: inset 0 0 0 2px #38bdf8;
+}
+
+/* Button */
+.add-button {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.add-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+}
+
+/* Ingredient list container */
+.ingredient-list {
+  margin-top: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Individual ingredient item */
+.ingredient-item {
+  list-style: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background-color: #020617;
+  color: #e2e8f0;
+  box-shadow: inset 0 0 0 1px #334155;
+  transition: all 0.2s ease;
+}
+
+.ingredient-item:hover {
+  background-color: #334155;
+  transform: translateX(6px);
+}
+
+/* Optional: smooth appearance */
+.ingredient-item {
+  animation: fadeIn 0.3s ease;
+}
+
+/* Animation (class-based usage only) */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Wrapper for each item + delete */
+.ingredient-list-container div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Ingredient item */
+.ingredient-list-item {
+  flex: 1;
+  list-style: none;
+  padding: 10px 14px;
+  
+  color: #e2e8f0;
+  box-shadow: inset 0 0 0 1px #192335;
+  transition: 0.2s ease;
+}
+
+/* Delete button (the "x") */
+.ingredient-list-container div p {
+  margin: 0;
+  width: 28px;
+  height: 28px;
+ 
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+/* Hover effect */
+.ingredient-list-container div p:hover {
+  transform: scale(1.1);
+}
+
+/* Click effect */
+.ingredient-list-container div p:active {
+  transform: scale(0.9);
+}
