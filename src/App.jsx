@@ -5,15 +5,17 @@ import ChangeColor from './components/ChangeColor'
 import Card from './components/Card'
 import CardProfile from './components/CardProfile'
 import ChangeCardData from './components/ChangeCardData'
+import AddIngredients from './components/AddIngredients'
+import DisplayIngredients from './components/DisplayIngredients'
 
 function App() {
   return (
     <div>
-      <Profile />
+      {/* <Profile />
       <Login />
-      <ChangeColor/>
+      <ChangeColor/> */}
 
-      <h2>Card Component</h2>
+      {/* <h2>Card Component</h2>
       <div className='card-container'>
         <Card>
           <div className='card-content'>
@@ -23,7 +25,10 @@ function App() {
             </div>
           </div>
         </Card>
-      </div>
+      </div> */}
+      <AddIngredients/>
+      <DisplayIngredients/>
+   
       
     </div>
   )
