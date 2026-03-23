@@ -19,11 +19,76 @@ input:active{
 }
 
 body {
-  height: 100vh;
-  margin: 0;
+  min-height: 100vh;
+  margin: 50px;
   background: linear-gradient(90deg,
-      white 0%,
-      gray 25%,
-      blue 100%);
-      margin: 50px;
+      #ffffff 10%,
+      #dde1f2 35%,
+      #c9dbff 65%,
+      #a8c2ff 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-container {
+  width: min(90vw, 420px);
+  min-height: 220px;
+  margin: 0 auto;
+  padding: 18px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(245,250,255,0.95));
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.8);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.14), 0 4px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+  transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.card-container:hover {
+  transform: translateY(-8px) scale(1.008);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.2), 0 6px 14px rgba(0,0,0,0.1);
+  border-color: rgba(255,255,255,1);
+}
+
+.handle-flex-row {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+input {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+  transition: border-color 200ms ease, box-shadow 200ms ease, transform 200ms ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6a8bff;
+  box-shadow: 0 0 0 4px rgba(106, 139, 255, 0.2);
+  transform: scale(1.02);
+}
+
+input::placeholder {
+  color: gray;
+}
+
+input:active {
+  background-color: orange;
 }
