@@ -8,6 +8,9 @@ const ingredientSlice = createSlice({
         addIngredient: (state,action)=> {
             state.value = [...state.value, action.payload];
         },
+        deleteIngredient: (state,action) => {
+            state.value = state.value.filter((__,index) => index !== action.payload);
+        }
 
        
 
@@ -17,5 +20,5 @@ const ingredientSlice = createSlice({
 });
 
 
-export  const {addIngredient} = ingredientSlice.actions;
+export  const {addIngredient ,deleteIngredient} = ingredientSlice.actions;
 export default ingredientSlice.reducer;
