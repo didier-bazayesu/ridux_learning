@@ -21,11 +21,11 @@ input:active{
 body {
   min-height: 100vh;
   margin: 50px;
-  background: linear-gradient(90deg,
-      #ffffff 10%,
-      #dde1f2 35%,
-      #c9dbff 65%,
-      #a8c2ff 100%);
+ 
+      background: radial-gradient(circle at 20% 20%, #fceabb, transparent 40%),
+        radial-gradient(circle at 80% 30%, #f8b500, transparent 40%),
+        radial-gradient(circle at 50% 80%, #ff6f61, transparent 40%);
+    
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
