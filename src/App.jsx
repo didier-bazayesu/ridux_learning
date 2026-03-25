@@ -7,7 +7,9 @@ import CardProfile from './components/CardProfile'
 import ChangeCardData from './components/ChangeCardData'
 import AddIngredients from './components/AddIngredients'
 import DisplayIngredients from './components/DisplayIngredients'
-
+import MyComponent from './components/HistoryNavigation'
+import UncontrolledForm from './components/UnControlledForm'
+import Products from './components/Products'
 function App() {
   return (
     <div>
@@ -26,8 +28,12 @@ function App() {
           </div>
         </Card>
       </div> */}
-      <AddIngredients/>
+      {/* <AddIngredients/>
       <DisplayIngredients/>
+      <MyComponent/>
+      <UncontrolledForm/> */}
+
+      <Products/>
    
       
     </div>
