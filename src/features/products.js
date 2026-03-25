@@ -1,0 +1,22 @@
+export  const products = [
+  { id: 1, name: "iPhone 14", category: "Electronics", price: 999 },
+  { id: 2, name: "Samsung Galaxy S22", category: "Electronics", price: 850 },
+  { id: 3, name: "Dell XPS 13", category: "Computers", price: 1200 },
+  { id: 4, name: "MacBook Air M2", category: "Computers", price: 1300 },
+  { id: 5, name: "Sony Headphones", category: "Accessories", price: 200 },
+  { id: 6, name: "Nike Air Max", category: "Footwear", price: 150 },
+  { id: 7, name: "Adidas Ultraboost", category: "Footwear", price: 180 },
+  { id: 8, name: "Wooden Desk", category: "Furniture", price: 250 },
+  { id: 9, name: "Office Chair", category: "Furniture", price: 120 },
+  { id: 10, name: "Samsung 55\" TV", category: "Electronics", price: 700 },
+  { id: 11, name: "LG Refrigerator", category: "Appliances", price: 900 },
+  { id: 12, name: "Microwave Oven", category: "Appliances", price: 150 },
+  { id: 13, name: "Apple Watch", category: "Accessories", price: 400 },
+  { id: 14, name: "Gaming Mouse", category: "Accessories", price: 60 },
+  { id: 15, name: "Mechanical Keyboard", category: "Accessories", price: 100 },
+  { id: 16, name: "Canon DSLR Camera", category: "Electronics", price: 1100 },
+  { id: 17, name: "Backpack", category: "Bags", price: 80 },
+  { id: 18, name: "Leather Wallet", category: "Bags", price: 50 },
+  { id: 19, name: "Running Shorts", category: "Clothing", price: 40 },
+  { id: 20, name: "Winter Jacket", category: "Clothing", price: 200 }
+];
