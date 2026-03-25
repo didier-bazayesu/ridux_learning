@@ -351,3 +351,167 @@ input:active {
 .clear-btn:hover {
   background-color: darkred;
 }
+/* 🌍 Main Container */
+.shopping-container {
+  width: 90%;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+/* 🛒 Cart Section */
+.cart-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* 🧾 Cart Item */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+.cart-item:hover {
+  background-color: #f9f9f9;
+}
+
+/* Cart Text */
+.cart-name {
+  font-weight: bold;
+}
+
+.cart-qty {
+  color: #555;
+}
+
+.cart-price {
+  color: green;
+  font-weight: bold;
+}
+
+/* ❌ Remove Button */
+.remove-btn {
+  padding: 6px 12px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: darkred;
+  transform: scale(1.05);
+}
+
+/* 💰 Total Price */
+.cart-container p:last-child {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: right;
+}
+
+/* 📦 Product Grid */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* 🧱 Product Card */
+.product-card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+}
+
+/* ✨ Hover Effect */
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* 📝 Product Text */
+.product-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-category {
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 🔢 Quantity Controls */
+.quantity-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.quantity-text {
+  font-weight: bold;
+}
+
+/* 🔘 Buttons */
+.btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* ➕ ➖ Buttons */
+.qty-btn {
+  background-color: #e0e0e0;
+}
+
+.qty-btn:hover {
+  background-color: #d5d5d5;
+  transform: scale(1.1);
+}
+
+/* 🛒 Add to Cart Button */
+.add-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  font-weight: bold;
+}
+
+.add-btn:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+}
