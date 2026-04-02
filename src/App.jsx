@@ -13,6 +13,12 @@ import MyComponent from './components/HistoryNavigation'
 import UncontrolledForm from './components/UnControlledForm'
 import Products from './prooductsFilter/Products'
 import Shopping from './shoppingCart/Shopping'
+import TabNavigation from './tabNavigation/TabNavigation'
+import ModelComponent from './ModelComponent'
+import UseReducer from './gatePreparation/UseReducer'
+import ToggleButtons from './gatePreparation/UseReducer'
+import NameTransfer from './gatePreparation/TransferedNames'
+import CardList from './gatePreparation/toggleCard'
 
 function App() {
   return (
@@ -29,13 +35,14 @@ function App() {
         <Link to="/form">Form</Link>
         <Link to="/products">Products</Link>
         <Link to="/shopping">Shopping</Link>
+        <Link to="/navigate">Navigate</Link>
       </nav>
 
       {/* 🧭 Routes */}
       <Routes>
-        <Route path="/" element={<h2>Home Page</h2>} />
+        <Route path="/:id/:value" element={<NameTransfer/>} />
 
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/profile" element={ <CardList/>} />
         <Route path="/login" element={<Login />} />
         <Route path="/color" element={<ChangeColor />} />
 
@@ -61,6 +68,7 @@ function App() {
             <>
               <AddIngredients />
               <DisplayIngredients />
+             
             </>
           } 
         />
@@ -68,7 +76,9 @@ function App() {
         <Route path="/history" element={<MyComponent />} />
         <Route path="/form" element={<UncontrolledForm />} />
         <Route path="/products" element={<Products />} />
-        <Route path="/shopping" element={<Shopping />} />
+        <Route path='navigate' element={<TabNavigation />} >
+        </Route>
+
 
       </Routes>
 
